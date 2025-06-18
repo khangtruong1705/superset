@@ -36,7 +36,7 @@ ARG DEV_MODE="false"           # Skip frontend build in dev mode
 ENV DEV_MODE=${DEV_MODE}
 
 COPY docker/ /app/docker/
-RUN chmod +x /app/docker/apt-install.sh
+RUN chmod +x /app/docker/apt-install.sh /app/docker/frontend-mem-nag.sh
 # Arguments for build configuration
 ARG NPM_BUILD_CMD="build"
 
