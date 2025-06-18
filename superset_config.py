@@ -1,7 +1,7 @@
 # ENABLE_JAVASCRIPT_CONTROLS = True
 
 FEATURE_FLAGS = {
-    "EMBEDDED_SUPERSET": True,
+    "EMBEDDED_SUPERSET": True
     # "DASHBOARD_RBAC": True,
     # "ALLOW_JAVASCRIPT_EXECUTION": True,
     # "GUEST_ROLE": "Public",
@@ -15,7 +15,7 @@ CORS_OPTIONS = {
     "allow_headers": ["*"],
     "expose_headers": ["*"],
     "resources": ["*"],
-    "origins": ["http://localhost:3000", "http://localhost:8000"],
+    "origins": ["http://localhost:3000", "http://localhost:8000"]
 }
 
 ENABLE_GUEST_TOKEN = True
