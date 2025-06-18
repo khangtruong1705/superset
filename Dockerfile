@@ -227,6 +227,7 @@ RUN --mount=type=cache,target=${SUPERSET_HOME}/.cache/uv \
     uv pip install .
 RUN python -m compileall /app/superset
 
+COPY superset_config.py /app/pythonpath/superset_config.py
 USER superset
 
 ######################################################################
